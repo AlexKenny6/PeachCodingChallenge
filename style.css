@@ -1,0 +1,111 @@
+:root {
+    font-size: 24px;
+}
+
+body {
+    background: linear-gradient(to left, #89CFF0, #ff2400);
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.card-group {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    position: relative;
+    height: 270px;
+    width: 450px;
+    border-radius: 25px;
+    background: linear-gradient(green, orange);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, .1);
+    box-shadow: orange;
+    overflow: hidden;
+}
+
+.logo img,
+.chip img,
+.number,
+.name,
+.from,
+.to {
+    position: absolute;
+}
+
+.logo img {
+    top: 35px;
+    right: 40px;
+    height: auto;
+    width: 80px;
+    opacity: .8;
+}
+
+.chip img {
+    top: 120px;
+    left: 40px;
+    width: 50px;
+    height: auto;
+    opacity: .8;
+}
+
+.number,
+.name,
+.from,
+.to {
+    color: rgba(255, 255, 255, .8);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .6);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .3));
+}
+
+.number {
+    left: 40px;
+    bottom: 65px;
+    font-family: sans-serif;
+}
+
+.name {
+    font-size: .5rem;
+    left: 40px;
+    bottom: 35px;
+}
+
+.from {
+    font-size: .5rem;
+    bottom: 35px;
+    right: 110px;
+}
+
+.to {
+    font-size: .5rem;
+    bottom: 35px;
+    right: 40px;
+}
+
+.show {
+    display: none;
+}
+
+.hide:focus + .show {
+    display: inline;
+}
+
+.hide:focus {
+    display: none;
+}
+
+.hide:focus ~ #numbersToHide {
+    display: none;
+}
+
+@media print {
+    .hide, .show {
+        display: none;
+    }
+}

@@ -9,7 +9,7 @@ body {
     overflow: hidden;
 }
 
-.card-group {
+.cardContainer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,12 +18,12 @@ body {
 
 .card {
     position: relative;
-    height: 270px;
-    width: 450px;
-    border-radius: 25px;
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
     background: linear-gradient(green, orange);
-    backdrop-filter: blur(30px);
-    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(50px);
+    border: gray;
     box-shadow: orange;
     overflow: hidden;
 }
@@ -60,8 +60,6 @@ body {
     color: rgba(255, 255, 255, .8);
     font-weight: 400;
     letter-spacing: 2px;
-    text-shadow: 0 0 2px rgba(0, 0, 0, .6);
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .3));
 }
 
 .number {
